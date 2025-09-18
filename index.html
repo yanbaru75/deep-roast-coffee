@@ -1,17 +1,91 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Deep Roast Coffee</title>
-  <!-- �d�v�F�擪�� / ��t���� ���΃p�X�ɂ��� -->
+  <meta name="description" content="深煎りを楽しむ小さな焙煎所・Deep Roast Coffee のサイト">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <h1>GitHub Pages �ғ��e�X�g</h1>
-  <p>���̌��o�����\�������΁APages �̔z�M��OK�ł��B</p>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">Deep Roast Coffee</a>
+      <button id="menuBtn" class="menu-btn" aria-label="メニュー">☰</button>
+      <nav id="nav" class="nav">
+        <a href="#hero">Home</a>
+        <a href="#features">Feature</a>
+        <a href="#menu">Menu</a>
+        <a href="#story">Story</a>
+        <a href="#access">Access</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- �d�v�F����������΃p�X -->
+  <main>
+    <section id="hero" class="hero">
+      <div class="overlay">
+        <h1>深煎りで、ととのう。</h1>
+        <p>豊かな香りとコクを、日常に。</p>
+        <a href="#menu" class="btn">メニューを見る</a>
+      </div>
+    </section>
+
+    <section id="features" class="section container">
+      <h2 class="section-title">Feature</h2>
+      <div class="grid-3">
+        <article class="card">
+          <img src="assets/feature_beans.jpg" alt="豆のセレクト">
+          <h3>豆のセレクト</h3>
+          <p>季節に合わせてロースト。深煎りの魅力を最大限に。</p>
+        </article>
+        <article class="card">
+          <img src="assets/feature_drip.jpg" alt="ハンドドリップ">
+          <h3>ハンドドリップ</h3>
+          <p>一杯ごとに丁寧に。香りのレイヤーを引き出します。</p>
+        </article>
+        <article class="card">
+          <img src="assets/feature_latte.jpg" alt="ラテアート">
+          <h3>ラテアート</h3>
+          <p>エスプレッソ×ミルクの黄金比でまろやかに。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="menu" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Menu</h2>
+        <div class="grid-4">
+          <figure class="card"><img src="assets/product_1.jpg" alt=""><figcaption>深煎りブレンド</figcaption></figure>
+          <figure class="card"><img src="assets/product_2.jpg" alt=""><figcaption>シングルオリジン</figcaption></figure>
+          <figure class="card"><img src="assets/product_3.jpg" alt=""><figcaption>カフェラテ</figcaption></figure>
+          <figure class="card"><img src="assets/product_4.jpg" alt=""><figcaption>カプチーノ</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="section container">
+      <h2 class="section-title">Story</h2>
+      <div class="grid-3">
+        <figure class="card"><img src="assets/story_1.jpg" alt=""><figcaption>焙煎所より</figcaption></figure>
+        <figure class="card"><img src="assets/story_2.jpg" alt=""><figcaption>こだわりの抽出</figcaption></figure>
+        <figure class="card"><img src="assets/story_3.jpg" alt=""><figcaption>日常に寄り添う一杯</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="access" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Access</h2>
+        <p>那覇市○○ 1-2-3（サンプル）</p>
+        <img class="map" src="assets/map.jpg" alt="店舗周辺マップ">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container">
+    <small>&copy; <span id="y"></span> Deep Roast Coffee</small>
+  </div></footer>
+
   <script defer src="./script.js"></script>
 </body>
 </html>
